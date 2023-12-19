@@ -1,6 +1,6 @@
 # MultiHome The Microsoft Monitoring Agetnt With AzurePolicy, Guest Configuration and PowerShell DSC
 
-Each environment will have a unique set of files for this solution.
+Each environment will have a unique set of files for this solution. Before deploying the solution please ensure that the Azure Guest Configuration exention is deployed in your environment. 
 
 Follow the steps below to author the configuration:
 
