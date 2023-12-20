@@ -76,6 +76,27 @@ New-AzPolicyDefinition -Name 'Name of the policy' -Policy '.\yourfile.json'
 
 ```
 
+If you encounter the following error in Azure US Government
+
+The provider 'Microsoft.ConnectedVMwarevSphere' referenced by the 'field' property 'Microsoft.ConnectedVMwarevSphere/virtualMachines/osProfile.osType' of the policy rule doesn't exist.
+
+Remove the following lines from the policy:
+
+```json
+                                    {
+                                        "allOf": [
+                                            {
+                                                "field": "type",
+                                                "equals": "Microsoft.ConnectedVMwarevSphere/virtualMachines"
+                                            },
+                                            {
+                                                "field": "Microsoft.ConnectedVMwarevSphere/virtualMachines/osProfile.osType",
+                                                "like": "windows*"
+                                            }
+                                        ]
+                                    }
+```
+
 9. Expected outcomes
 
 When checking the compliance status interactively via a Powershell 5.1 PowerShell session
