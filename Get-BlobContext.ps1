@@ -1,8 +1,8 @@
-$connectionString = _ ENTER STORAGE ACCOUNT CONNECTION STRING HERE _
+$connectionString = __YOUR CONNECTION STRING_
 $context = New-AzStorageContext -ConnectionString $connectionString
 $getParams = @{
     Context   = $context
-    Container = _ STORAGE ACCOUNT CONTAINER NAME _
+    Container = __YOUR CONTAINER NAME_
     Blob      = 'MicrosoftMonitoringAgentMultiHomeSetup.zip'
 }
 $blob = Get-AzStorageBlob @getParams
