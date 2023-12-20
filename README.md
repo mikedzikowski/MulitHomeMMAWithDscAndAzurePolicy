@@ -108,3 +108,4 @@ Get-GuestConfigurationPackageComplianceStatus -Path ./MicrosoftMonitoringAgentMu
 ![Alt text](images/image.png)
 
 When checking the compliance status via the Azure Portal
+![Alt text](images/portalimage.png)
