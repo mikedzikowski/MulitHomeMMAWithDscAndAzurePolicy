@@ -47,7 +47,7 @@ New-GuestConfigurationPackage @params
 Get-GuestConfigurationPackageComplianceStatus -Path ./MicrosoftMonitoringAgentMultiHomeSetup.zip
 
 # Test applying the configuration to local machine
-Start-GuestConfigurationPackageRemediation -Path ./MyConfig.zip
+Start-GuestConfigurationPackageRemediation -Path ./MicrosoftMonitoringAgentMultiHomeSetup.zip
 
 ```
 
