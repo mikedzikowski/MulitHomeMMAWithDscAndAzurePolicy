@@ -1,4 +1,4 @@
-# MultiHome The Microsoft Monitoring Agetnt With AzurePolicy, Guest Configuration and PowerShell DSC
+# MultiHome The Microsoft Monitoring Agent With AzurePolicy, Guest Configuration and PowerShell DSC
 
 Each environment will have a unique set of files for this solution. Before deploying the solution please ensure that the Azure Guest Configuration exention is deployed in your environment. 
 
